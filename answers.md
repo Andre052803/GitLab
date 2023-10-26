@@ -39,14 +39,14 @@ What branches would change, and how?
 git checkout test
 git merge top_N
 ```
-
+the changes in top_N would be incorporated into the test branch
 6. What do you think would happen if you ran the following commands?
 What branches would change, and how?
 ```
 git checkout top_ten
 git merge test
 ```
-
+there would be a merge conflict 
 7. What do you think would happen if you ran the following commands?
 What branches would change, and how?
 ```
@@ -54,3 +54,4 @@ git checkout test
 git rebase top_ten
 git rebase top_N
 ```
+heads from top_ten and top_N would be moved to the origin of where the branches were pulled from in checkout test and would merge fine
